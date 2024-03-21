@@ -7,8 +7,9 @@ const h3 = document.createElement("h3")
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-  
-  do {
+  let continueData = true
+
+  while (continueData) {
     const firstName = prompt("Enter first name");
     if (firstName === null) break;
     const lastName = prompt("Enter last name");
@@ -24,15 +25,9 @@ const collectEmployees = function() {
 
     employeeData.push({firstName, lastName, salary});
 
-    let continueData = confirm("Would you like to add another employee?")
-    
-    if (continueData) {
-      continueData = true;
-    } else {
-      continueData = false;
-    }
-    
-  } while (collectEmployees);
+    continueData = confirm("Would you like to add another employee?")
+                
+ } 
   
   return employeeData;
 };
