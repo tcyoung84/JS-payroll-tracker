@@ -1,8 +1,6 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const employeeData =[]
-const h2 = document.createElement("h2")
-const h3 = document.createElement("h3")
 
 // Collect employee data
 const collectEmployees = function() {
@@ -39,7 +37,13 @@ const displayAverageSalary = function(employeesArray) {
   for (let employee of employeesArray) {
     sum += employee.salary;
   }
-  console.log(`The sum of all salaries is: ${sum}`)
+  console.log(`The sum of all salaries is: $${sum}`) // Calculate the sum of all salaries first so that we can calculate the average later
+
+  const averageSalary = (sum / employeesArray.length).toFixed(2);
+  const totalEmployees = employeesArray.length;
+  console.log(`The average employee salary between our ${totalEmployees} is $${averageSalary}`);
+
+  
 }
 
 
