@@ -25,7 +25,7 @@ const collectEmployees = function() {
 
     employeeData.push({firstName, lastName, salary});
 
-    continueData = confirm("Would you like to add another employee?")
+    continueData = confirm("Would you like to add another employee?") //when continueData is false, loop will stop and employeeData will be posted in table
                 
  } 
   
@@ -35,8 +35,13 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-  
+  let sum = 0;
+  for (let employee of employeesArray) {
+    sum += employee.salary;
+  }
+  console.log(`The sum of all salaries is: ${sum}`)
 }
+
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
