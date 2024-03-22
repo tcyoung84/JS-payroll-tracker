@@ -1,6 +1,6 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-const employeeData =[]
+const employeeData =[];
 
 // Collect employee data
 const collectEmployees = function() {
@@ -14,6 +14,7 @@ const collectEmployees = function() {
     if (lastName === null) break;
     let salary = Number(prompt("Enter salary"));
     if (salary === null) break;
+    // breaks are to stop the loop if Cancel is clicked during the data collecton prompts
 
     if (salary > 0) {
       salary = salary;
@@ -41,8 +42,8 @@ const displayAverageSalary = function(employeesArray) {
 
   const averageSalary = (sum / employeesArray.length).toFixed(2);
   const totalEmployees = employeesArray.length;
-  console.log(`The average employee salary between our ${totalEmployees} employee(s) is $${averageSalary}`);
-  // average salary of all employees
+  console.log(`The average employee salary between our ${totalEmployees} employee(s) is $${averageSalary}`); // average salary of all employees
+  
 }
 
 
