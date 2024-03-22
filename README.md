@@ -2,7 +2,9 @@
 
 ## Your Task
 
-This week's Challenge requires you to modify starter code to create an application that enables a payroll manager to view and manage employee payroll data. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+This week's Challenge requires you to modify starter code to create an application that enables a payroll manager to view and manage employee payroll data. <br>
+This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. <br>
+It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
 ## User Story
 
@@ -34,18 +36,17 @@ The following images show the web application's appearance and functionality:
 
 ![Shows employee information in the console of an employee payroll tracker.](/assets/images/Console-01.png)
 
-## Getting Started
+## Functions of the Salary Tracker
 
-This function will allow a user to add multiple employees to display on the page.
-The user will need to enter the first name, last name, and salary of each employee, then have the option to keep adding employees until they choose to stop.
-The salary will need to be entered as a number, otherwise it should default to $0.
-This function should return an array of objects.
-This function will take in the generated array of employees, randomly select one employee, and use a template literal to log their full name to the console.
-This function will take in an array of employees and render each employee to an HTML table.
-This function will execute when the "Add Employees" button is clicked.
+Allow a user to add multiple employees to display on the page.<br>
+The user will need to enter the first name, last name, and salary of each employee, then have the option to keep adding employees until they choose to stop.<br>
+The salary will need to be entered as a number, otherwise it should default to $0.<br>
+The input should return an array of objects.<br>
+The generated array of employees will randomly select one employee, and log their full name to the console.<br>
+The array of employees will be rendered to an HTML table.<br>
 
-Github Repo :
+Github Repo : https://github.com/tcyoung84/JS-payroll-tracker
 
-Guthub Deployment :
+Guthub Deployment : https://tcyoung84.github.io/JS-payroll-tracker/
 
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
